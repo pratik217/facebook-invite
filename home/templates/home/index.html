@@ -1,0 +1,25 @@
+<html>
+   <head>
+   <title>My Invite app</title>
+   </head>
+   <body>
+   <div id="fb-root"></div>
+   <script src="https://connect.facebook.net/en_US/all.js">
+   </script>
+   <script>
+     FB.init({ 
+       appId:'1537762356498747', cookie:true, 
+       status:true, xfbml:true 
+     });
+
+     
+
+function FacebookInviteFriends()
+{
+FB.ui({ method: 'apprequests', 
+   message: 'Myapp...'});
+}
+   </script>
+  <form> <input type="button" value="Facebook Invite Friends" onclick="FacebookInviteFriends();"></form>
+   </body>
+</html>
